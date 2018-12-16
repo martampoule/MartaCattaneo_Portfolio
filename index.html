@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Marta Cattaneo">
+    <meta name="keywords" content="HTML,CSS, JS, GIT, PORTFOLIO, MARTAMPOULE">
+    <meta name="author" content="Marta Cattaneo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marta Cattaneo</title>
+
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+
+<body>
+    <!--NAV-->
+    <nav class="d-none d-md-block" style="
+    z-index: 100;   
+    background-color: yellow;   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-size: 1em;
+    padding: 0.5%;
+    position: relative;
+    font-size: 0.8em;">
+
+        <div class="row" style="width: 100%; padding-left: 10%;">
+            <!--1-->
+            <div class="col">
+                <div class="over nav-div">
+                    <a href="index.html" class="select" style="text-decoration: none; color: black; font-weight: 700;">MARTA
+                        CATTANEO</a>
+                </div>
+                <div class="over footer-div">
+                    <a href="skills.html" style="text-decoration: none; color: black; font-weight: 700;">SKILLS</a>
+                </div>
+            </div>
+
+            <!--2-->
+            <div class="col">
+                <span style="font-weight: 700;">Contatti</span> <br>
+                <span>+39 3465937968</span> <br>
+                <span>marta.cattaneo@student.supsi.ch</span>
+            </div>
+
+            <!--3-->
+            <div class="col">
+                <span style="font-weight: 700;">Studentessa in Comunicazione Visiva</span> <br>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--hamburger-->
+    <section class="d-md-none h-body">
+        <section style="background-color: yellow; height: 60px; width: 100%;">
+                <div class="row" style="padding: 10%; padding-top: 0; margin-right: 0%;">
+                        <div class="col">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars" style="color: rgb(0, 0, 0); font-size: 2em; padding-top: 13px; margin-right: 10%; z-index: 100;"></i>
+                        </a>
+                        </div>
+                        <div class="col" style="padding-right: 0;">
+        <p style="color: rgb(0, 0, 0); font-size: 1em; padding-top: 13px; z-index: 100; font-weight: 700; text-align: right;" class="float-right" >Marta :) </p>
+                                </div>
+        </section>
+
+        <section style="background-color: #ffffff; position: relative; display: none" id="myLinks">
+            <ul style="display: table-raw; list-style: none; padding-left: 10%; padding-right: 10%; background-color:yellow; padding-top: 3%; padding-right: 3%; padding-bottom: 3%; margin-bottom: 0;">
+                <a href="index.html" class="select" style="text-decoration: none; color: black; font-weight: 700;">MARTA
+                    CATTANEO</a> <br>
+                <a href="skills.html" style="text-decoration: none; color: black; font-weight: 700;">SKILLS</a>
+            </ul>
+            <ul style="display: table-raw; list-style: none; padding-left: 10%; background-color:yellow; padding-top: 3%; padding-right: 3%; padding-bottom: 3%; margin-bottom: 0;">
+                <p style="background-color: white; margin-right: 10%;">
+                    <span style="font-weight: 700;">Contatti</span> <br>
+                    <span>+39 3465937968</span> <br>
+                    <span>marta.cattaneo@student.supsi.ch</span>
+                </p>
+            </ul>
+            <ul style="display: table-raw; list-style: none; padding-left: 10%; background-color:yellow; padding-top: 3%; padding-right: 3%; padding-bottom: 3%;">
+                <p style="background-color: white; margin-right: 10%;">
+                    <span style="font-weight: 700;">Studentessa in Comunicazione Visiva</span> <br>
+                </p>
+            </ul>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </section>
+    </section>
+
+    <!--GALLERY-->
+    <section class="">
+        <div class="carousel">
+            <!--1-->
+            <div class="carousel-cell showSingle" target="1">
+                <img src="img/logo/limonuisa.jpg" alt="limonuisa" />
+            </div>
+            <!--2-->
+            <div class="carousel-cell showSingle" target="2">
+                <img src="img/logo/personale.jpg" alt="logo personale" />
+            </div>
+            <!--3-->
+            <div class="carousel-cell showSingle" target="3">
+                <img src="img/brand/5.jpg" alt="brand" />
+            </div>
+            <!--4-->
+            <div class="carousel-cell showSingle" target="4">
+                <img src="img/interface/rollerskater.jpg" alt="rollerskater" />
+            </div>
+            <!--5-->
+            <div class="carousel-cell showSingle" target="5">
+                <img src="img/interface/unity_mappa.jpg" alt="unity" />
+            </div>
+            <!--6-->
+            <div class="carousel-cell showSingle" target="6">
+                <img src="img/interface/2_1.png" alt="unity" />
+            </div>
+            <!--7-->
+            <div class="carousel-cell showSingle" target="7">
+                <img src="img/tipografia/joost.jpg" alt="joos" />
+            </div>
+            <!--8-->
+            <div class="carousel-cell showSingle" target="8">
+                <img src="img/tipografia/thunder.jpg" alt="thunder" />
+            </div>
+            <!--9-->
+            <div class="carousel-cell showSingle" target="9">
+                <img src="img/photoshop/vangogh.jpg" alt="vangogh" />
+            </div>
+            <!--10-->
+            <div class="carousel-cell showSingle" target="10">
+                <img src="img/fotografia/oroscopo/oroscopo_gallery.jpg" alt="oroscopo_gallery" />
+            </div>
+            <!--11-->
+            <div class="carousel-cell showSingle" target="11">
+                <img src="img/gif/lametta_spaziale.gif" alt="lametta_spaziale" />
+            </div>
+            <!--12-->
+            <div class="carousel-cell showSingle" target="12">
+                <img src="img/foto/00.jpg" alt="foto" />
+            </div>
+            <!--13-->
+            <div class="carousel-cell showSingle" target="13">
+                <img src="img/altro/altro.jpg" alt="coding" />
+            </div>
+        </div>
+
+    </section>
+
+    <!--SHOW ON CLICK-->
+    <section>
+        <!--1-->
+        <div id="div1" class="targetDiv section">
+            <strong class="title ">Limonuisa</strong>
+            <p><strong>Limonuisa nasce dall’idea di dare un’immagine al limoncello casalingo prodotto da mia madre,
+                    Luisa.</strong></p>
+            <p>Il nome Limonuisa deriva dall‘unione di Limoncello e Luisa. Unendo i nomi si ottengono due risultati:
+                Luisoncello e Limonuisa. Ho scelto di utilizzare quest‘ultimo per via del suo suono femminile,
+                richiamando
+                così la figura della madre.</p>
+            <div class="row">
+                <video id="myVideo" alt="qualcosa" width="50%" height="100%" onmouseover="myFunction()" class="img"
+                    controls>
+                    <source src="img/logo/limonuisa.mp4" type="video/mp4">
+                </video>
+                <img src="img/logo/mokup_limonuisa.png" alt="qualcosa" class="img mouseover">
+            </div>
+        </div>
+
+        <!--2-->
+        <div id="div2" class="targetDiv section" style="display: block;">
+            <strong class="title">Logo personale</strong>
+            <p>La creazione del mio logo è stato uno studio importante per capire quelle che sono le sensazioni che
+                voglio
+                trasmettere a chi mi circonda. Le parole che mi rappresentano sono le seguenti: realista, ottimista,
+                metodica e
+                stabile. Questi termini si possono riassumere con la sensazione di sicurezza.</p>
+        </div>
+
+        <!--3-->
+        <div id="div3" class="targetDiv section">
+            <strong class="title">La mia identità</strong>
+            <p><strong>Come comunico la mia identità ad un sordo-cieco?</strong></p>
+            <p>L’unione del mio nome, con il suono della mia voce crea una caratteristica unica, che appartiene
+                solamente a me
+                e che per questo motivo prendo in considerazione per definire la mia identità. Il mio percorso si
+                articola
+                nella comunicazione della mia identità ad un target che presenta limitazioni nella ricezione del
+                messaggio.
+                Quando mi presento ad una nuova persona, la prima informazione che lascio è il mio nome, Marta. Ciò
+                che va a
+                definire che sono proprio quella persona, proprio quella Marta, oltre al cognome è l’intonazione
+                spontanea della
+                mia voce che pronuncia il mio nome. Nome e cognome sarebbe limitativo perchè potrei ave- re un’omonima
+                e perdere
+                la mia identità.</p>
+            <div class="row">
+                <img src="img/brand/1.jpg" alt="qualcosa" class="img mouseover">
+                <img src="img/brand/2.jpg" alt="qualcosa" class="img mouseover">
+                <img src="img/brand/3.jpg" alt="qualcosa" class="img mouseover">
+                <img src="img/brand/4.jpg" alt="qualcosa" class="img mouseover">
+            </div>
+        </div>
+
+        <!--4-->
+        <div id="div4" class="targetDiv section">
+            <strong class="title">Visual applicazione "Rollerskater"</strong>
+            <p>Il pattinaggio è uno sport molto comune che in tanti amano; oltre che per uso sportivo i pattini sono
+                un
+                ottimo mezzo di trasporto, molto simile alla bicicletta ma, a differenza di quest’ultima non è ancora
+                possibile
+                frenare in totale sicurezza. Il problema che trattiene le persone dall’utilizzare i pattini per gli
+                spostamenti
+                è proprio il dover frenare in maniera tempestiva in caso di ostacoli o discese. L’idea di un <i>
+                    futuribile </i>dispositivo
+                interno al pattino controllabile in remoto potrebbe essere la soluzione definitiva a questo problema
+                dando la
+                possibilità ai più insicuri di frenare all’occorrenza grazie all’applicazione collegata al
+                dispositivo inserito
+                nella ruota del pattino.</p>
+
+            <img src="img/interface/visual.jpg" alt="qualcosa" class="img1">
+            <img src="img/interface/visual2.jpg" alt="qualcosa" class="img1">
+            <img src="img/interface/visual3.jpg" alt="qualcosa" class="img1">
+            <img src="img/interface/visual4.jpg" alt="qualcosa" class="img1">
+            <img src="img/interface/visual5.jpg" alt="qualcosa" class="img1">
+
+        </div>
+
+        <!--5-->
+        <div id="div5" class="targetDiv section">
+            <strong class="title">Data Visualization <i> Geolocalizzazione </i></strong>
+            <p>L’app Understanding the World è il nuovo modo per guardare e comparare le infografiche basato
+                sull’atlante
+                “Understanding the World – The Atlas of Infographics” il cui intento è quello di presentare in modo
+                creativo e
+                stimolante informazioni relative a tutto il mondo.</p>
+            <div class="row">
+                <img src="img/interface/unity_mappa_1.jpg" alt="qualcosa" class="img">
+                <img src="img/interface/unity_mappa_2.jpg" alt="qualcosa" class="img">
+            </div>
+        </div>
+
+        <!--6-->
+        <div id="div6" class="targetDiv section">
+            <strong class="title">Data Visualization <i>Visual Keylogger</i></strong>
+            <p>Visual Keylogger è un prototipo di applicazione in realtà aumentata per Iphone e Tablet che permette
+                all’utente di
+                visualizzare i propri dati sull’utilizzo della tastiera direttamente puntando la telecamera del
+                dispositivo sulla
+                tastiera del proprio computer.</p>
+            <div id="photos">
+                <img src="img/interface/1.png" alt="qualcosa" class="img">
+                <img src="img/interface/2.png" alt="qualcosa" class="img">
+                <img src="img/interface/3.png" alt="qualcosa" class="img">
+                <img src="img/interface/4.png" alt="qualcosa" class="img">
+                <img src="img/interface/5.png" alt="qualcosa" class="img">
+                <img src="img/interface/6.png" alt="qualcosa" class="img">
+                <img src="img/interface/7.png" alt="qualcosa" class="img">
+            </div>
+            <p> <strong>Keylogger e parser</strong> <a href="https://github.com/martampoule/keylogger.git" class="link"
+                    target="_blank">
+                    github.com/martampoule/keylogger.git </a></p>
+            <p> <strong>Unity Script</strong> <a href="https://github.com/martampoule/UnityScript.git" class="link"
+                    target="_blank">
+                    github.com/martampoule/UnityScript.git </a></p>
+        </div>
+
+        <!--7-->
+        <div id="div7" class="targetDiv section">
+            <strong class="title">Joost Schmidt</strong>
+            <p> Manifesto per un'ipotetica mostra riguardante Joost Schmidt</p>
+            Il manifesto deve essere realizzato solo con caratteri ed elementi della cassa tipografica.
+            Bisogna utilizzare il minor numero di caratteri tipografici, i quali però sono i principali elementi da
+            utilizzare; è possibile inserire forme geometriche ma solo se necessarie.</p>
+        </div>
+
+        <!--8-->
+        <div id="div8" class="targetDiv section">
+            <strong class="title">Thunder – Imagine Dragons</strong>
+            <p> Poster tipografico sperimentale prodotto per un Workshop Universitario.</p>
+        </div>
+
+        <!--9-->
+        <div id="div9" class="targetDiv section">
+            <strong class="title">Photoshop</strong>
+            <p>Mi diverte molto manipolare immagini con Photoshop :)</p>
+            <div id="photos">
+                <img src="img/photoshop/vermeer.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/vangogh.png" alt="qualcosa" class="img">
+                <img src="img/photoshop/San_Patrizioa.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/sposa.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/marco.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/scarpe.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/casa_matteo.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/casa_matteo2.jpg" alt="qualcosa" class="img">
+                <img src="img/photoshop/vangog.gif" alt="qualcosa" class="img">
+            </div>
+        </div>
+
+        <!--10-->
+        <div id="div10" class="targetDiv section">
+            <strong class="title">Illustazione/fotografia</strong>
+            <p>Illustrazione dei 12 segni zodiacali. <br> Collage, tempere e fotocopiatrice</p>
+            <div id="photos">
+                <img src="img/fotografia/oroscopo/oroscopo.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo2.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo3.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo4.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo5.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo6.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo7.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo8.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo9.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo10.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo11.jpg" alt="qualcosa" class="img">
+                <img src="img/fotografia/oroscopo/oroscopo12.jpg" alt="qualcosa" class="img">
+            </div>
+        </div>
+
+        <!--11-->
+        <div id="div11" class="targetDiv section">
+            <strong class="title">Illustrazione animata</strong>
+            <p>Gif creata con lo scopo di simulare un movimento partendo da un oggetto di uso comune.</p>
+            <div id="photos">
+            </div>
+        </div>
+
+        <!--12-->
+        <div id="div12" class="targetDiv section">
+            <strong class="title">Fotografia</strong>
+            <p>Selezione di scatti</p>
+            <div id="photos">
+                <img src="img/foto/01.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/02.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/03.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/04.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/05.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/06.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/07.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/08.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/09.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/10.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/11.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/12.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/13.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/14.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/15.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/16.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/17.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/18.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/19.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/20.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/21.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/22.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/23.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/24.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/25.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/26.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/27.jpg" alt="qualcosa" class="img">
+                <img src="img/foto/28.jpg" alt="qualcosa" class="img">
+
+
+            </div>
+        </div>
+
+        <!--13-->
+        <div id="div13" class="targetDiv section">
+            <strong class="title">Coding</strong> <br> <br>
+            <strong>Alcuni siti scritti da me</strong> <br>
+            <a class="link" href="https://martampoule.github.io/sociologia/">L'EVOLUZIONE DELLA PIAZZA GARIBALDI:
+                progetto di Sociologia Visiva (SUPSI- 2017/2018)</a> <br>
+            <a class="link" href="http://artichoke.ch/2018-2019/05/">Troolling.com: HOTEL DEI CENOS</a> <br>
+            </p>
+
+            <strong>Profilo GitHub </strong> <br>
+            <a class="link" href="https://github.com/martampoule">martampoule</a>
+        </div>
+    </section>
+
+</body>
+
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="js/show.js"></script>
+
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+<script src="js/index.js"></script>
+
+</html>
