@@ -1,9 +1,10 @@
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body{
     font-size: 1em;
+    letter-spacing: 0.04em;
 }
 /* carousel */
 .carousel {
@@ -37,6 +38,7 @@ body{
   top: 0;
 font-size: 0.8em;
   padding: 10%;
+
 }
 
 .nav > .nav-div a {

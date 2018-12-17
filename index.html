@@ -15,24 +15,14 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="skills.css">
 </head>
 
 <body>
     <!--NAV-->
-    <nav class="d-none d-md-block" style="
-    z-index: 100;   
-    background-color: yellow;   
-    width: 100%;
-    position: fixed;
-    top: 0;
-    font-size: 1em;
-    padding: 0.5%;
-    position: relative;
-    font-size: 0.8em;">
-
+    <nav class="d-none d-sm-block" style="z-index: 100;  background-color: yellow;   width: 100%; position: fixed; top: 0; font-size: 1em; padding: 0.5%; position: relative; font-size: 0.8em;">
         <div class="row" style="width: 100%; padding-left: 10%;">
             <!--1-->
             <div class="col">
@@ -64,15 +54,16 @@
     <!--hamburger-->
     <section class="d-md-none h-body">
         <section style="background-color: yellow; height: 60px; width: 100%;">
-                <div class="row" style="padding: 10%; padding-top: 0; margin-right: 0%;">
-                        <div class="col">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars" style="color: rgb(0, 0, 0); font-size: 2em; padding-top: 13px; margin-right: 10%; z-index: 100;"></i>
-                        </a>
-                        </div>
-                        <div class="col" style="padding-right: 0;">
-        <p style="color: rgb(0, 0, 0); font-size: 1em; padding-top: 13px; z-index: 100; font-weight: 700; text-align: right;" class="float-right" >Marta :) </p>
-                                </div>
+            <div class="row" style="padding: 10%; padding-top: 0; margin-right: 0%;">
+                <div class="col">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars" style="color: rgb(0, 0, 0); font-size: 2em; padding-top: 13px; margin-right: 10%; z-index: 100;"></i>
+                    </a>
+                </div>
+                <div class="col" style="padding-right: 0;">
+                    <p style="color: rgb(0, 0, 0); font-size: 1em; padding-top: 13px; z-index: 100; font-weight: 700; text-align: right;"
+                        class="float-right">Marta :) </p>
+                </div>
         </section>
 
         <section style="background-color: #ffffff; position: relative; display: none" id="myLinks">
@@ -159,6 +150,10 @@
                 <img src="img/foto/00.jpg" alt="foto" />
             </div>
             <!--13-->
+            <div class="carousel-cell showSingle" target="14">
+                <img src="img/video/vans.jpg" alt="vans" />
+            </div>
+            <!--14-->
             <div class="carousel-cell showSingle" target="13">
                 <img src="img/altro/altro.jpg" alt="coding" />
             </div>
@@ -177,13 +172,11 @@
                 Luisoncello e Limonuisa. Ho scelto di utilizzare quest‘ultimo per via del suo suono femminile,
                 richiamando
                 così la figura della madre.</p>
-            <div class="row">
-                <video id="myVideo" alt="qualcosa" width="50%" height="100%" onmouseover="myFunction()" class="img"
-                    controls>
-                    <source src="img/logo/limonuisa.mp4" type="video/mp4">
-                </video>
-                <img src="img/logo/mokup_limonuisa.jpg" alt="qualcosa" class="img mouseover">
-            </div>
+            <video id="myVideo" alt="qualcosa" width="100%" height="100%" onmouseover="myFunction()" controls>
+                <source src="img/logo/limonuisa.mp4" type="video/mp4">
+            </video>
+            <img src="img/logo/mokup_limonuisa.jpg" alt="qualcosa" class="img mouseover">
+        </div>
         </div>
 
         <!--2-->
@@ -340,8 +333,15 @@
         <!--11-->
         <div id="div11" class="targetDiv section">
             <strong class="title">Illustrazione animata</strong>
-            <p>Gif creata con lo scopo di simulare un movimento partendo da un oggetto di uso comune.</p>
-            <div id="photos">
+            <div class="row">
+                <div class="col">
+                    <img src="img/gif/pattinata.gif" alt="gif" >
+                </div>
+                <div class="col">
+                    <video alt="video" width="100%" height="100%" onmouseover="myFunction()" controls loop>
+                        <source src="img/gif/pizza.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
 
@@ -384,17 +384,27 @@
         </div>
 
         <!--13-->
-        <div id="div13" class="targetDiv section">
-            <strong class="title">Coding</strong> <br> <br>
-            <strong>Alcuni siti scritti da me</strong> <br>
-            <a class="link" href="https://martampoule.github.io/sociologia/">L'EVOLUZIONE DELLA PIAZZA GARIBALDI:
-                progetto di Sociologia Visiva (SUPSI- 2017/2018)</a> <br>
-            <a class="link" href="http://artichoke.ch/2018-2019/05/">Troolling.com: HOTEL DEI CENOS</a> <br>
-            </p>
-
-            <strong>Profilo GitHub </strong> <br>
-            <a class="link" href="https://github.com/martampoule">martampoule</a>
+        <div id="div14" class="targetDiv section">
+            <strong class="title">Video</strong> <br> <br>
+            <p>Video creato per un progetto universitario nella facoltà di Belle Arti a Valencia.</p> <br>
+            <video alt="video" width="100%" height="100%" onmouseover="myFunction()" controls>
+                <source src="img/video/vans.mp4" type="video/mp4">
+            </video>
         </div>
+    </section>
+
+    <!--14-->
+    <div id="div13" class="targetDiv section">
+        <strong class="title">Coding</strong> <br> <br>
+        <strong>Alcuni siti scritti da me</strong> <br>
+        <a class="link" href="https://martampoule.github.io/sociologia/">L'EVOLUZIONE DELLA PIAZZA GARIBALDI:
+            progetto di Sociologia Visiva (SUPSI- 2017/2018)</a> <br>
+        <a class="link" href="http://artichoke.ch/2018-2019/05/">Troolling.com: HOTEL DEI CENOS</a> <br>
+        </p>
+
+        <strong>Profilo GitHub </strong> <br>
+        <a class="link" href="https://github.com/martampoule">martampoule</a>
+    </div>
     </section>
 
 </body>
