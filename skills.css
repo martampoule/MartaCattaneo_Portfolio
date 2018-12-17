@@ -31,7 +31,7 @@
       left: 0;
       width: 8em;
       font-size: 0.7em;
-      color: #ffffff;
+      color: #000000;
   }
   
   .skillbar-title span {
@@ -46,6 +46,7 @@
       height: 20px;
       width: 0px;
   }
+
   
   .skill-bar-percent {
       position:absolute;
